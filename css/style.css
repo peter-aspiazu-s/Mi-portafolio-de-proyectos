@@ -303,24 +303,24 @@ body{
     overflow: hidden;
 }
 .carousel__project{
-    width: 200%;
+    width: 400%;
     display: flex;
+    position: relative;
     flex-flow: row nowrap;
     justify-content: space-around;
     align-items: center;
     transition: all 0.4s ease;
     transform: translateX(0%);
-    position: relative;
 }
 .img{
-    width: calc( 100% / 2 - 2em);
+    width: calc( 100% / 4 - 2em);
     transition: all 0.4s ease;
 }
 .project__content1{
     position: absolute;
+    left: 0%;
     bottom: 0;
-    left: 16px;
-    width: calc( 100% / 2 - 2em);
+    width: calc(100% / 4);
     height: 70px;
     display: flex;
     flex-direction: column;
@@ -342,9 +342,9 @@ body{
 }
 .project__content2{
     position: absolute;
+    left: 25%;
     bottom: 0;
-    right: 15px;
-    width: calc( 101% / 2 - 2em);
+    width: calc(100% / 4);
     height: 70px;
     display: flex;
     flex-direction: column;
@@ -359,6 +359,56 @@ body{
     font-weight: 500;
 }
 .project__content2 button{
+    padding: 8px 18px;
+    font-size: 14px;
+    border: 0;
+    cursor: pointer;
+    background-color: #eee;
+}
+.project__content3{
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: calc(100% / 4);
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.project__content3 h3{
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+}
+.project__content3 button{
+    padding: 8px 18px;
+    font-size: 14px;
+    border: 0;
+    cursor: pointer;
+    background-color: #eee;
+}
+.project__content4{
+    position: absolute;
+    left: 75%;
+    bottom: 0;
+    width: calc(100% / 4);
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.project__content4 h3{
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+}
+.project__content4 button{
     padding: 8px 18px;
     font-size: 14px;
     border: 0;
@@ -444,11 +494,11 @@ body{
 /*========================== MEDIA QUERIE 400PX ==========================*/
 @media screen and (min-width: 400px){
     /*========================== SECTION ==========================*/
-    .project__content1{
+    /* .project__content1{
         position: absolute;
         bottom: 0;
         left: 16px;
-        width: calc( 100% / 2 - 2em);
+        width: calc(100% / 4);
         height: 90px;
         display: flex;
         flex-direction: column;
@@ -460,14 +510,14 @@ body{
         position: absolute;
         bottom: 0;
         right: 16px;
-        width: calc( 100% / 2 - 2em);
+        width: calc(100% / 4);
         height: 90px;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
         background-color: rgba(0, 0, 0, 0.8);
-    }
+    } */
 }
 
 /*========================== MEDIA QUERIE 500PX ==========================*/
@@ -547,6 +597,37 @@ body{
         font-weight: 600;
         letter-spacing: 2px;
     }
+    .project__content3 h3{
+        color: #fff;
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 2px;
+    }
+    .project__content3 button{
+        padding: 8px 18px;
+        font-size: 14px;
+        border: 0;
+        cursor: pointer;
+        background-color: #eee;
+        font-weight: 600;
+        letter-spacing: 2px;
+    }
+    .project__content4 h3{
+        text-align: center;
+        color: #fff;
+        font-size: 16px;
+        font-weight:600;
+        letter-spacing: 2px;
+    }
+    .project__content4 button{
+        padding: 8px 18px;
+        font-size: 14px;
+        border: 0;
+        cursor: pointer;
+        background-color: #eee;
+        font-weight: 600;
+        letter-spacing: 2px;
+    }
 }
 
 
@@ -592,6 +673,12 @@ body{
         height: 110px;
     }
     .project__content2{
+        height: 110px;
+    }
+    .project__content3{
+        height: 110px;
+    }
+    .project__content4{
         height: 110px;
     }
 
@@ -654,6 +741,12 @@ body{
     .project__content2{
         height: 150px;
     }
+    .project__content3{
+        height: 150px;
+    }
+    .project__content4{
+        height: 150px;
+    }
 
     .project__content1 h3{
         font-size: 20px;
@@ -669,6 +762,18 @@ body{
         padding: 15px 25px;
         font-size: 16px;
     }
+    .project__content3 h3{
+        font-size: 20px;
+    }
+    .project__content3 button{
+        padding: 15px 25px;
+        font-size: 16px;
+    }
+    .project__content4 h3{
+        font-size: 20px;
+    }
+    .project__content4 button{
+        padding: 15px 25px;
+        font-size: 16px;
+    }
 }
-
-    

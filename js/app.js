@@ -87,7 +87,7 @@ const carruselEnlace = document.querySelectorAll('.link');
 carruselEnlace.forEach( ( cadaEnlace , i )=> {
     carruselEnlace[i].addEventListener('click', ()=>{
         let posicion = i;
-        let operacion = posicion * -50;
+        let operacion = posicion * -25;
 
         carruselGrande.style.transform = `translateX(${ operacion }% )`;
 
