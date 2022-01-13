@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Peter Aspiazu | Web Development</title>
+    <script defer src="js/app.js"></script>
+    <script defer src="https://kit.fontawesome.com/0894a0420e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <h3>Peter Aspiazu</h3>
+                </a>
+            </div>
+            <nav>
+                <div class="ico-menu">
+                    <i class="fas fa-bars" id="icon-menu"></i>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <a href="#home" class="selected"><li>Home</li></a>
+                        <a href="#profile" class="menu__profile"><li>Profile</li></a>
+                        <a href="#project"><li>Portfolio</li></a>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <article class="article" id="home">
+        <div class="article-background">
+            <div class="container">
+                <p>Welcome</p>
+                <p>Learn more about my work</p>
+                <button><a href="#project">My projects</a></button>
+            </div>
+        </div>
+    </article>
+
+    <main class="main" id="profile">
+        <div class="container">
+            <div class="main__img">
+                <img src="img/peter.jpg" alt="My profile picture" loading="lazy">
+            </div>
+            <h3>Profile</h3>
+            <p>I learned a little bit about web development 3 years ago, when my web design teacher asked us to code a drop down menu. That's when I discovered HTML5 and CSS3, two languages that made me curious to learn web development.
+
+                At that time, my career was focused more on another area of technology, so I did not continue with the topic of web development for a long time. Now, it has been a year since I became interested in the pro development world, so I learned more of HTML5 (semantic tags, structuring a web, attributes, forms, classes, id etc) and CSS3 (inheritance, specificity, pseudo-classes, pseudo-elements, transitions, animations, variables, etc). When I learned these two languages, I knew I should also learn javascript, but I pursued Sass and Bootstrap first. 
+                
+                It’s been 6 months since I started studying javascript and it has been a real challenge, but the mozilla documentation is very good. With youtube channels like Jon Mircha's or I am Dalto, I have learned a lot about this wonderful language. I am 100% sure that I want to dedicate myself to web development, and I continue self-taught learning through videos and tutorials.
+            </p>
+            <button><a href="https://github.com/peter-aspiazu-s" target="_blank">More Information</a></button>
+        </div>
+    </main>
+
+    <aside class="aside">
+        <div class="aside__h3">
+            <h3>ABILITIES</h3>
+        </div>
+        <div class="aside__list" id='slick-list'>
+            <div class="aside__slick-arrow aside__slick-prev" id="button-prev" data-button="button-prev"
+                onclick="app.processingButton(event)">
+                <i class="fas fa-chevron-circle-left"></i>
+            </div>
+
+            <div class="aside__slick-track" id='track'>
+                <div class="slick">
+                    <div>
+                        <i class="fab fa-html5"></i>
+                        <span>HTML 5</span>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <i class="fab fa-css3-alt"></i>
+                        <span>CSS 3</span>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <i class="fab fa-js"></i>
+                        <span>Javascript</span>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <i class="fab fa-bootstrap"></i>
+                        <span>Bootstrap</span>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <i class="fab fa-sass"></i>
+                        <span>Sass</span>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <i class="fab fa-git-alt"></i>
+                        <span>Git</span>
+                    </div>
+                </div>
+            </div>
+            <div class="aside__slick-arrow aside__slick-next" id="button-next" data-button="button-next"
+                onclick="app.processingButton(event)">
+                <i class="fas fa-chevron-circle-right"></i>
+            </div>
+        </div>
+    </aside>
+
+    <section class="section" id="project">
+        <div class="container">
+            <div class="section__h2">
+                <h2>My projects</h2>
+            </div>
+            <article class="section__article-carousel">
+                <div class="carousel__project">
+
+                    <img src="img/DePrati.jpg" alt="project image" class="img" loading="lazy">
+                    <div class="project__content1">
+                        <h3>Replica of the home Deprati's</h3>
+                        <a href="https://github.com/peter-aspiazu-s/Replica-de-Deprati" target="_blank"><button>see on github</button></a>
+                    </div>
+
+                    <img src="img/DcueroShoes.jpg" alt="project image" class="img" loading="lazy">
+                    <div class="project__content2">
+                        <h3>Replica of the home of Decuero shoes</h3>
+                        <a href="https://github.com/peter-aspiazu-s/D-cuero-Shoes-desde-cero" target="_blank"><button>see on github</button></a>
+                    </div>
+
+                </div>
+            </article>
+            <article class="section__article-link">
+                <span class="link active"></span>
+                <span class="link"></span>
+            </article>
+        </div>
+    </section>
+
+    <article class="article__networks">
+        <div class="container">
+            <div class="networks__h3">
+                <h3>Social Networks</h3>
+            </div>
+            <div class="networks__ico">
+                <a href="https://www.linkedin.com/in/peter-aspiazu/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/paspiazus/" target="_blank"><i class="fab fa-instagram-square"></i></a>
+                <a href="https://github.com/peter-aspiazu-s" target="_blank"><i class="fab fa-github-square"></i></a>
+                <a href="https://wa.me/593967454468" target="_blank"><i class="fab fa-whatsapp-square"></i></a>
+            </div>
+        </div>
+    </article>
+
+    <footer class="footer">
+        <small>2021 &copy; <a href="mailto:paspiazusabando@gmail.com"><span>Peter Aspiazu</span></a> | All rights reserved</small>
+    </footer>
+
+</body>
+
+</html>
