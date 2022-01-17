@@ -303,7 +303,7 @@ body{
     overflow: hidden;
 }
 .carousel__project{
-    width: 400%;
+    width: 500%;
     display: flex;
     position: relative;
     flex-flow: row nowrap;
@@ -313,14 +313,14 @@ body{
     transform: translateX(0%);
 }
 .img{
-    width: calc( 100% / 4 - 2em);
+    width: calc( 100% / 5);
     transition: all 0.4s ease;
 }
 .project__content1{
     position: absolute;
     left: 0%;
     bottom: 0;
-    width: calc(100% / 4);
+    width: calc(100% / 5);
     height: 70px;
     display: flex;
     flex-direction: column;
@@ -342,9 +342,9 @@ body{
 }
 .project__content2{
     position: absolute;
-    left: 25%;
+    left: 20%;
     bottom: 0;
-    width: calc(100% / 4);
+    width: calc(100% / 5);
     height: 70px;
     display: flex;
     flex-direction: column;
@@ -367,9 +367,9 @@ body{
 }
 .project__content3{
     position: absolute;
-    left: 50%;
+    left: 40%;
     bottom: 0;
-    width: calc(100% / 4);
+    width: calc(100% / 5);
     height: 70px;
     display: flex;
     flex-direction: column;
@@ -392,9 +392,9 @@ body{
 }
 .project__content4{
     position: absolute;
-    left: 75%;
+    left: 60%;
     bottom: 0;
-    width: calc(100% / 4);
+    width: calc(100% / 5);
     height: 70px;
     display: flex;
     flex-direction: column;
@@ -409,6 +409,31 @@ body{
     font-weight: 500;
 }
 .project__content4 button{
+    padding: 8px 18px;
+    font-size: 14px;
+    border: 0;
+    cursor: pointer;
+    background-color: #eee;
+}
+.project__content5{
+    position: absolute;
+    left: 80%;
+    bottom: 0;
+    width: calc(100% / 5);
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.project__content5 h3{
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+}
+.project__content5 button{
     padding: 8px 18px;
     font-size: 14px;
     border: 0;
@@ -628,6 +653,22 @@ body{
         font-weight: 600;
         letter-spacing: 2px;
     }
+    .project__content5 h3{
+        text-align: center;
+        color: #fff;
+        font-size: 16px;
+        font-weight:600;
+        letter-spacing: 2px;
+    }
+    .project__content5 button{
+        padding: 8px 18px;
+        font-size: 14px;
+        border: 0;
+        cursor: pointer;
+        background-color: #eee;
+        font-weight: 600;
+        letter-spacing: 2px;
+    }
 }
 
 
@@ -679,6 +720,9 @@ body{
         height: 110px;
     }
     .project__content4{
+        height: 110px;
+    }
+    .project__content5{
         height: 110px;
     }
 
@@ -747,6 +791,9 @@ body{
     .project__content4{
         height: 150px;
     }
+    .project__content5{
+        height: 150px;
+    }
 
     .project__content1 h3{
         font-size: 20px;
@@ -773,6 +820,13 @@ body{
         font-size: 20px;
     }
     .project__content4 button{
+        padding: 15px 25px;
+        font-size: 16px;
+    }
+    .project__content5 h3{
+        font-size: 20px;
+    }
+    .project__content5 button{
         padding: 15px 25px;
         font-size: 16px;
     }
